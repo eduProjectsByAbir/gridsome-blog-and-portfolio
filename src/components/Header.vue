@@ -18,7 +18,7 @@ query {
 }
 </static-query>
 
-<style lang="scss" scoped>
+<style lang="scss">
 header {
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   width: calc(100% - 12rem);
   padding: 0.5rem 6rem;
-  background: $blue;
+  background: $lightblue;
   color: $white;
 }
 
