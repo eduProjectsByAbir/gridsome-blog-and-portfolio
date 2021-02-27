@@ -8,13 +8,7 @@
           v-for="post in $page.allPost.edges"
           v-bind="post.node.id"
           :key="post.node.id"
-          :to="
-            '/blog/' +
-              post.node.title
-                .toLowerCase()
-                .split(' ')
-                .join('-')
-          "
+          :to="post.node.path"
         >
           {{ post.node.title }}
         </g-link>
@@ -36,6 +30,7 @@ query {
                 date
                 content
                 timeToRead
+                path
             }
         }
     }
